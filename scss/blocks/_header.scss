@@ -1,0 +1,52 @@
+/* Header */
+.header {
+    background-color: $dark-blue;
+
+    &__wrapper {
+        min-height: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__navigation {
+        display: none;
+    }
+
+    &__button:hover .header__navigation {
+        display: block;
+    }
+
+    &__logo {
+        margin: 0 41px 0;
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+            opacity: 0.5;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+
+    &__button-svg, 
+    &__cart-svg, 
+    &__login-svg, 
+    &__search {
+        fill: #FFFFFF;
+    }
+
+    &__button-svg:hover, 
+    &__cart-svg:hover, 
+    &__login-svg:hover, 
+    &__search:hover {
+        opacity: 0.5;
+    }
+    &__link {
+        margin: 0 0 0 34px;
+    }
+}
