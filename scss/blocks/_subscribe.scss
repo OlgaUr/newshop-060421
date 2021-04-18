@@ -1,0 +1,91 @@
+/* Subscribe */
+.subscribe {
+    background-color: #FFFFFF;
+    width: 100%;
+    background: url(../img/subscribe-img.jpg);
+    background-size: cover;
+    background-position: 0 center;
+    min-height: 448px;
+
+    &__container {
+        display: flex;
+    }
+    &__info {
+        @include font(20px,24px);
+        text-align: center;
+        color: $dark-blue;
+        padding: 77px 20px 126px;
+        width: 50%;
+        @include flex-center;
+        flex-direction: column;
+
+        &-text {
+            width: 360px;
+            @include font(20px, 24px, normal);
+            text-align: center;
+            margin-top: 20px;
+
+            &-italic {
+                font-style:italic;
+            }
+        }
+    }
+    &__form {
+        padding: 87px 20px 126px;
+        width: 50%;
+        @include flex-center;
+        flex-direction: column;
+
+        &-heading {
+            @include font(24px, 167.2%, bold);
+            text-align: center;
+            color: $dark-blue;
+            text-transform: uppercase;
+        }
+        &-subheading {
+            font-family: Lato;
+            
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 167.2%;
+            text-align: center;
+            color: $dark-blue;
+            text-transform: uppercase;
+            align-items: center;
+        }
+        &-fieldset {
+            @include flex-center;
+            margin-top: 23px;
+        }
+        &-input {
+            text-align: center;
+            min-height: 49px;
+            padding: 0 7px;
+            display: inline;
+            background: #E1E1E1;
+            border: none;
+            border-top-left-radius: 25px;
+            border-bottom-left-radius: 25px;
+        }
+        &-button {
+            background-color: $dark-pink;
+            color: #FFFFFF;
+            @include font(14px, 17px, normal);
+            @include flex-center;
+            text-align: center;
+            min-height: 49px;
+            padding: 0 23px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: none;
+
+            &:hover,
+            &:focus {
+                opacity: 0.5;
+                cursor: pointer;
+                outline: none;
+            }
+        }
+    }
+}

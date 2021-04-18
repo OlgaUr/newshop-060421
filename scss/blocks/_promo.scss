@@ -1,0 +1,58 @@
+/* Promo */
+.promo {
+    display: flex;
+    margin: 0 0 63px 0;
+    position: relative;
+
+
+    &__overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $dark-blue;
+        opacity: 0.5;
+        width: 100%;
+        min-height: 100%;
+        display: none;
+    }
+
+    &:hover > &__overlay {
+        display: block;
+    }
+
+    &__heading-wrapper {
+        background-color: $pink;
+        flex-grow: 1;
+        align-items: center;
+        display: flex;
+        padding: 0 0 0 92px;
+    }
+
+    &__heading {
+        font-weight: 900;
+        font-size: 48px;
+        line-height: 58px;
+        text-transform: uppercase;
+        color: $dark-blue;
+        position: relative;
+    }
+
+    &__heading:before {
+        content: '';
+        width: 12px;
+        height: 92px;
+        background-color: $dark-pink;
+        position: absolute;
+        left: -20px;
+        top: 5px;
+    }
+
+    &__sub-heading {
+        @include font(32px, 38px, 700, normal);
+        display: block;
+    }
+
+    &__heading-pink {
+        color: $dark-pink;
+    }
+}

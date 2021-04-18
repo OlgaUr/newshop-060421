@@ -1,0 +1,30 @@
+.features {
+        &__list {
+        display: flex;
+        flex-direction: row;
+
+        .features__list-item {
+            width: 360px;
+            color:#FFFFFF;
+            min-height: 341px;
+            @include flex-center;
+            flex-direction: column;
+        }
+    }
+    &__item {
+        &-img {
+            margin-top: 103px;
+        }
+        &-heading {
+            @include font(20px, 24px);
+            color: #FBFBFB;
+            margin: 28px auto 16px;;  
+        }
+        &-text {
+            @include font(14px,17px, 300);
+
+            color: #FBFBFB;
+            margin: 16px auto 104px auto;
+        }
+    }
+}
