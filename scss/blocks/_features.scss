@@ -2,6 +2,10 @@
         &__list {
         display: flex;
         flex-direction: row;
+        @include tablet {
+            flex-direction: column;
+            align-items: center;
+        }
 
         .features__list-item {
             width: 360px;
@@ -9,11 +13,17 @@
             min-height: 341px;
             @include flex-center;
             flex-direction: column;
+            @include tablet {
+                min-height: 203px;
+            }
         }
     }
     &__item {
         &-img {
             margin-top: 103px;
+            @include tablet {
+                margin-top: 48px;
+            }
         }
         &-heading {
             @include font(20px, 24px);
@@ -22,9 +32,14 @@
         }
         &-text {
             @include font(14px,17px, 300);
-
             color: #FBFBFB;
             margin: 16px auto 104px auto;
+            @include tablet {
+                margin: 16px auto 48px;
+            }            
+            @include mobile {
+                margin: 16px auto 46px;
+            }
         }
     }
 }
