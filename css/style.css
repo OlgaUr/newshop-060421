@@ -47,8 +47,43 @@ table {
   border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-black.woff2") format("woff2"), url("../fonts/lato-black.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-bold.woff2") format("woff2"), url("../fonts/lato-bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-italic.woff2") format("woff2"), url("../fonts/lato-italic.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-light.woff2") format("woff2"), url("../fonts/lato-light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'lato';
+  src: url("../fonts/lato-regular.woff2") format("woff2"), url("../fonts/lato-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'lato', sans-serif;
   font-weight: 700;
   font-style: normal;
 }
@@ -56,7 +91,6 @@ body {
 .container {
   width: 1140px;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 @media (max-width: 1600px) {
@@ -954,5 +988,169 @@ footer {
 
 .copyright #copyright__list-insta {
   background-color: #F16D7F;
+}
+
+.registration_title {
+  min-height: 148px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.registration_title-heading {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #F16D7F;
+}
+
+.registration__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.registration__main-form {
+  margin-top: 64px;
+  margin-bottom: 96px;
+}
+
+.registration__form-button {
+  width: 167px;
+  height: 50px;
+  background-color: #F16D7F;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  border: none;
+}
+
+.registration__form-legend {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #222222;
+  margin-bottom: 20px;
+}
+
+.registration__form-input[type='text'], .registration__form-input[type='email'], .registration__form-input[type='password'], .registration__form-input[type='text']:-internal-autofill-selected, .registration__form-input[type='email']:-internal-autofill-selected, .registration__form-input[type='password']:-internal-autofill-selected {
+  width: 360px;
+  height: 45px;
+  display: block;
+  margin-bottom: 20px;
+  border: 1px solid #A4A4A4;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  color: #B1B1B1;
+  padding-left: 17px;
+}
+
+.registration__fieldset {
+  margin-bottom: 33px;
+}
+
+.registration__form-radioinput[type='radio'] {
+  width: 17px;
+  height: 17px;
+}
+
+.registration__form-radiolabel {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 13px;
+  margin: 0 20px 0 10px;
+}
+
+.registration__main-perks {
+  min-width: 650px;
+  min-width: 650px;
+  padding: 0 20px 0 128px;
+  margin-top: 64px;
+}
+
+.registration__perks-heading {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.registration__perks-text {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+.registration__perks-list {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.registration__perks-item {
+  margin-bottom: 16px;
+  padding-left: 43px;
+  background-image: url(../img/registration-checkmark.png);
+  background-position: 0px center;
+  background-repeat: no-repeat;
+}
+
+input[placeholder] {
+  text-overflow: ellipsis;
+}
+
+input::-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+input:-moz-placeholder {
+  text-overflow: ellipsis;
+}
+
+input:-ms-input-placeholder {
+  text-overflow: ellipsis;
+}
+
+:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+:focus::-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-moz-placeholder {
+  color: transparent;
+}
+
+:focus:-ms-input-placeholder {
+  color: transparent;
 }
 /*# sourceMappingURL=style.css.map */

@@ -107,29 +107,34 @@
         </section>
         <section class="registration__main container">
             <h2 class="visually-hidden">Categories</h2>
-            <div class="registration__form">
-                <form action="#">
-                    <fieldset>
-                        <legend>Your name</legend>
-                        <label for="firstname"></label>
-                        <input id="firstname" type="text">
-                        <label for="lastname"></label>
-                        <input id="lastname" type="text">
-                        <label for="gender"></label>
-                        <input type="radio" for="male" name="#" id="">
-                        <input type="radio" for="female" name="#" id="">
+            <div class="registration__main-form">
+                <form action="#" class="registration__form">
+                    <fieldset class="registration__fieldset">
+                        <legend class="registration__form-legend">Your name</legend>
+                        <label class="registration__form-label" for="firstname" ></label>
+                        <input class="registration__form-input" id="firstname" type="text"placeholder="Firstname">
+                        <label class="registration__form-label" for="lastname"></label>
+                        <input class="registration__form-input" id="lastname" type="text"  placeholder="Lastname">
+                        <div class="registration__form-gender">
+                            <label for="gender"></label>
+                            <input class="registration__form-radioinput" type="radio" for="male" name="#" id="">
+                            <label class="registration__form-radiolabel" for="mail">Male</label>
+                            <input class="registration__form-radioinput" type="radio" for="female" name="#" id="">
+                            <label class="registration__form-radiolabel" for="femail">Female</label>
+                        </div>
+
                     </fieldset>
                     <fieldset>
-                        <legend>Login details</legend>
-                        <input type="email" name="email" id="">
-                        <input type="password" name="password" id="">
+                        <legend class="registration__form-legend">Login details</legend>
+                        <input class="registration__form-input" type="email" name="email" placeholder="Email" id="">
+                        <input class="registration__form-input" type="password" name="password" placeholder="Password" id="">
                     </fieldset>
-                    <button type="submit">Join now</button>
+                    <button type="submit" class="registration__form-button">Join now</button>
 
                 </form>
 
             </div>
-            <div class="registration__perks">
+            <div class="registration__main-perks">
                 <h2 class="registration__perks-heading">Loyalty has its perks</h2>
                 <p class="registration__perks-text">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:</p>
                 <ul class="registration__perks-list">
