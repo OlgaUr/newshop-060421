@@ -1,0 +1,145 @@
+.registration {
+    &_title {
+        min-height: 148px;
+        display: flex;
+        align-items: center;
+
+        &-heading {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 29px;
+            text-transform: uppercase;
+            color: $dark-pink;
+        }
+    }
+    &__main {
+        display: flex;
+        flex-direction: row;
+
+        &-form {
+            margin-top: 64px;
+            margin-bottom: 96px;
+        }
+    }
+
+    &__form {
+        &-button {
+            width: 167px;
+            height: 50px;
+            background-color: $dark-pink;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            border: none;
+        }
+        
+        &-legend {
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 19px;
+            color:  $dark-blue;
+            margin-bottom: 20px;
+        }
+
+        &-input[type='text'], 
+        &-input[type='email'], 
+        &-input[type='password'],
+        &-input[type='text']:-internal-autofill-selected, 
+        &-input[type='email']:-internal-autofill-selected, 
+        &-input[type='password']:-internal-autofill-selected {
+            width: 360px;
+            height: 45px;
+            display: block;
+            margin-bottom: 20px;
+            border: 1px solid $light-gray;
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 13px;
+            line-height: 16px;
+            color: $input-gray;
+            padding-left: 17px;
+        }
+
+    }
+    
+    &__fieldset {
+        margin-bottom: 33px;
+    }
+
+
+}
+
+
+
+
+
+
+.registration__form-radioinput[type='radio'] {
+    width: 17px;
+    height: 17px;
+}
+.registration__form-radiolabel {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    margin: 0 20px 0 10px;
+}
+.registration__main-perks{
+    min-width: 650px;
+    min-width: 650px;
+    padding: 0 20px 0 128px;
+    margin-top: 64px;
+}
+.registration__perks{
+    &-heading {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &-text {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 20px;
+    }
+    &-list {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    &-item {
+        margin-bottom: 16px;
+        padding-left: 43px;
+        background-image: url(../img/registration-checkmark.png);
+        background-position: 0px center;
+        background-repeat: no-repeat;
+    }
+}
+
+input[placeholder]          {text-overflow:ellipsis;}
+input::-moz-placeholder     {text-overflow:ellipsis;} 
+input:-moz-placeholder      {text-overflow:ellipsis;} 
+input:-ms-input-placeholder {text-overflow:ellipsis;}
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
