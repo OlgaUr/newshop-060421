@@ -1,0 +1,143 @@
+.title {
+    min-height: 148px;
+    background-color: $pink;
+    display: flex;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+.d-block {
+    width: 597px;
+    margin: 0 auto;
+}
+
+
+    .desc {
+    width: 72%;
+    min-height: 601px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid $input-gray;
+    margin: 0 auto;
+    position: relative;
+    top: -20px;
+    background-color: #ffffff;
+    border: 1px solid #EAEAEA;
+    &__title {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #F16D7F;
+        margin-top: 65px;
+        text-transform: uppercase;
+    }
+    &__subtitle {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-top: 12px;
+        text-transform: uppercase;
+        }
+
+    &__description {
+        width: 52%;
+        margin: 48px auto 0;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: #5E5E5E;
+        }
+
+    &__price {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 29px;
+        color: #EF5B70;
+        margin-top: 33px;
+        }
+
+    &__line {
+        width: 63px;
+        height: 3px !important;
+        color: #EF5B70;
+        
+        &-big {
+            width: 641px;
+            height: 2px !important;
+            color: #EAEAEA;
+            margin-top: 60px;
+        }
+    }
+
+
+    &__button {
+        background-color: transparent;
+        min-width: 138px;
+        min-height: 43px;
+        border: 1px solid $dark-pink;
+        font-family: Lato;
+        @include font(14px,17px, normal, normal);
+        color: $dark-pink;
+        background: url(../img/card-logo.svg) 13px 50% no-repeat;
+        background-size: 20%;
+        padding-left: 50px;
+        padding-right: 15px;
+        margin-top: 49px;
+    
+        &:hover,
+        &:focus {
+            opacity: 0.5;
+            cursor: pointer;
+            outline: none;
+        }
+    }
+    }
+    
+
+.carousel-item {
+    background-color: #F7F7F7;
+}
+
+.thumbs {
+    &__item {
+        width: 360px;
+        min-height: 581px;
+        background-color: $grey;
+        margin-bottom: 30px;
+        position: relative;
+
+
+        &-heading {
+            @include font(13px,16px);
+            text-transform: uppercase;
+            color: #000000;
+            margin: 25px 0 13px 18px;
+        }
+
+        &-img {
+            width: 100%;
+        }
+        &-text {
+            @include font(14px,17px, 300);
+            color: $dark-grey;
+            margin:  0 29px 18px 18px;
+        }
+        &-price {
+            @include font(16px,19px, normal, normal);
+            color: $dark-pink;
+            margin:  0 29px 20px 18px;
+        }
+    }
+}
